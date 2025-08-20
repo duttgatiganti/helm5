@@ -1,0 +1,221 @@
+https://jhooq.com/getting-start-with-helm-chart/
+helm deal wit lot of yml 
+
+app dep,svc  helm install cart
+modify caret,sep yaml 
+    doc image url,type of svc
+
+witout elm 2 cmd,wit elm 1 cmd
+9
+nees k8s
+doc build 
+scalability, auto mate dep,,auto ealing, rollout,rollback
+doc run
+11
+elm in app ./c1
+elm unit app
+12
+install
+
+Micro k8s on linux
+install kunectl
+configure kubeconfig restart
+
+21
+kubectl get all
+24
+
+curl
+cmod 700 fn
+./fn
+elm version
+26  arcitecture,cli,cart
+rlm install dep cart
+elm delete/unint dep
+elm list -a
+30
+elm create c1
+ls c1
+cd tmp
+ls
+tree c1
+mod val.yml to np
+elm install dep ./c1
+elm install dep c1
+elm list -a
+ostnae -i
+38
+42
+
+create,install,list -a
+45
+upgrade rel c1   canges any ting
+vi val.yml
+     cange rep count
+upgrade rel c1
+lis -a
+48
+rollback rel re-no-1
+list -a   rev 3      rollback will create ver3
+50  debug dry run    know errors
+
+elm install rel --debug --dry-run c1
+statu pending install
+53
+el template  validate yml & instal temp locally
+elm temp c-name
+see details
+55
+elm lint c-name   error/mis configurations
+elm unin rel-name
+
+57  4
+own cart
+docker build,tag,pus,pull
+run image locally, verify,pus
+110
+ceart
+create c2
+vi c2/c.yml
+comment app ver
+vi c2/v.yml
+repo: image name
+vi c2/v.yml nodeport
+vi c2/temp/dep.yml
+    cont port : 9001
+    probes:   comment
+     image:  delete values: 
+install rel c-name
+verify dep
+1.22
+elm file
+single cmd elm file inst,unst,
+elmfile sync
+elmfile.yml
+installed: true,false
+
+1.26
+install file
+wget https://github.com/roboll/helmfile/releases/download/v0.144.0/helmfile_linux_amd64
+mv    elmfile
+cmod 777 elmfile
+sudo mv helmfile /use/local/bin
+version
+create c3
+vi elmfile.yml
+---
+releases:
+
+  - name: helloworld
+    chart: ./helloworld
+    installed: true 
+
+---
+r
+elmfile sync
+liast -a
+1.34 instal on remot git
+helm plugin install https://github.com/aslafy-z/helm-git
+instal plugin 
+vi elmfile
+ ---
+ repositories:
+     - name: helloworld
+       url: git+https://github.com/rahulwagh/helmchart@helloworld?ref=master&sparse=0
+   
+ releases:
+
+   - name: helloworld1
+     chart: helloworld/helloworld
+     installed: true
+
+   
+
+--
+repos
+rel
+sync
+
+1.41  instal mul c using file
+---
+releases:
+
+  - name: helloworld
+    chart: ./helloworld
+    installed: true
+  - name: helloworld2
+    chart: ./helloworld2
+    installed: true 
+1.42
+searc for repo 
+install sql,etc on repos
+elm searc ub wordpress
+helm search hub wordpress --max-col-width=0  com url
+gelm repo list   repo added to elm
+elm repo add name url
+helm repo add bitnami https://charts.bitnami.com/bitnami
+                  repo    ch
+helm show readme bitnami/wordpress --version 15.2.13     to ceck readme/doc
+1.49  ook test
+ook    
+diff ooks
+pre-inst,post inst ook
+perform activity before inst c
+perform activity after inst c
+set up cron job pre-install
+ss for clean up script post-inst
+cretae k8s res with hook
+create ch
+tree c/ooks in temp/pre-inst.yml
+cat /v.yml
+
+watc
+elm installl rel c1
+
+create 
+2.01
+ut for cart, validate cart
+
+test
+tree c
+cat test/temp/test/conn.yaml
+
+elm instal  rel cart
+elm test rel-name
+
+summary
+elm
+cmd
+caert
+file
+repo
+
+
+elm install dep ./c1
+uninstall,upgrade,list -a
+rollback rel re-no-1
+template c-name
+helm plugin install https://github.com/aslafy-z/helm-git
+instal plugin 
+vi elmfile
+elm lint c-name   error/mis configurations
+el template  validate yml & instal temp locally
+elm temp c-name
+elm install rel --debug --dry-run c1
+ ---
+ repositories:
+     - name: helloworld
+       url: git+https://github.com/rahulwagh/helmchart@helloworld?ref=master&sparse=0
+   
+ releases:
+
+   - name: helloworld1
+     chart: helloworld/helloworld
+     installed: true
+
+helm search hub wordpress --max-col-width=0  com url
+elm repo add name url
+helm repo add bitnami https://charts.bitnami.com/bitnami
+                  repo    ch
+helm show readme bitnami/wordpress --version 15.2.13     to ceck readme/doc
+helm search hub wordpress --max-col-width=0  com url
