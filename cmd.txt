@@ -1,0 +1,45 @@
+docker can serve 1 user
+if 1 m user
+use k8s with dock cont
+lot of yml 
+why k8s 
+
+
+14
+micro k8s
+17
+install kubectl
+19
+config .kube to mabe comm b/e k8s,kubectl
+restart
+
+
+kubectl get all --all-namespaces
+
+24
+install helm
+helm version
+
+30
+create helm and check dir
+modify svc as np in values
+
+run in outside dir
+helm install name dirname
+helm list -a
+get svc
+hostname -i
+
+38 dashbard
+
+
+helm uninstall chname 
+
+42
+cli cmd
+
+helm install d1 --debug --dry-run ./d
+helm template d
+
+
+
